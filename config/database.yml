@@ -1,0 +1,31 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: root
+  password: 123123123
+  host: localhost
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: the_mark_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: the_mark_test
+
+production:
+  <<: *default
+  database: the_mark_production
+  username: <%= ENV['THE_MARK_DATABASE_USERNAME'] %>
+  password: <%= ENV['THE_MARK_DATABASE_PASSWORD'] %>

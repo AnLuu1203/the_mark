@@ -1,0 +1,122 @@
+header {
+  z-index: 10;
+
+  .active {
+    background-color: rgba(165, 165, 165, 0.26) !important;
+
+     a {
+      background-color: transparent !important;
+    }
+  }
+
+  > .header-black {
+    background-color: #000 !important;
+  }
+
+  > .navbar{
+    padding: 0 32px;
+    height: 52px;
+    border-radius: 0px;
+
+    border: none;
+  }
+
+  > .nav-home{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.0));
+    background-color: transparent;
+  }
+}
+
+.menu-list {
+  li:hover {
+    background-color: rgba(165, 165, 165, 0.26) !important;
+  }
+}
+
+header .logo {
+  width: 188px;
+  background-image: url("../../images/logo.png");
+  text-align: center;
+  background-size: cover;
+}
+
+header .menu {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  text-align: center;
+  font-size: 11px;
+  color: #fff !important;
+}
+
+header .navbar-right .search-form {
+  padding: 8px 0;
+}
+
+header .navbar-right .search {
+  border: none;
+  font-size: 12px;
+  width: 300px;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+header .navbar-right .bag {
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+header .navbar-right .link-bag {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+}
+
+.text {
+  /*margin-top: 4px;*/
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bag-text{
+  color: white;
+  font-weight: bold;
+  margin: 0px 8px 0px 8px;
+}
+
+.bag-two{
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px 3px 8px;
+  border-radius: 10px;
+  background-color: #ffee2e;
+}
+
+.icon {
+  background-color: transparent;
+}
+.bag:hover {
+  background-color: rgba(165, 165, 165, 0.26) !important;
+}
+
+@media screen and (max-width: 768px) {
+  header > .navbar{
+    padding: 0;
+  }
+
+  header .logo {
+  text-align: left;
+  }
+
+  header .menu {
+    text-align: left;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  header .menu > div {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+}

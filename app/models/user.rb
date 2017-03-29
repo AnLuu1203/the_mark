@@ -7,8 +7,8 @@ class User < ActiveRecord::Base
 
   belongs_to :role, polymorphic: true
 
-  # def admin?
-  #   role_type == 'Admin'
-  # end
+  def admin?
+    role_type == 'Admin'
+  end
 
 end

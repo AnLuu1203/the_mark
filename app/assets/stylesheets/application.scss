@@ -15,4 +15,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@import "./layouts/header"
+@import "./layouts/header";
+
+* {
+  padding: 0;
+  margin: 0;
+}

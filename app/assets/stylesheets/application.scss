@@ -14,10 +14,12 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "home";
+@import "common";
 
 * {
   margin: 0;

@@ -10,4 +10,8 @@ class User < ActiveRecord::Base
     role_type == 'Admin'
   end
 
+  def customer?
+    role_type == 'Customer'
+  end
+
 end

@@ -54,7 +54,7 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'rubocop', '~> 0.41.2', require: false
   gem 'shoulda-matchers', '~> 3.1'
-  gem 'simplecov', :require => false
+  gem 'simplecov', require: false
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'

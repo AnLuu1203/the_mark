@@ -1,6 +1,18 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-div {
-  background-color: #000;
+
+body#home_index {
+  padding-top: 0;
+}
+
+section#slider {
+
+  .item {
+    img {
+      width: 100%;
+      height: 800px;
+    }
+  }
+
 }

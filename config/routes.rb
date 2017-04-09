@@ -9,6 +9,10 @@ Rails.application.routes.draw do
                                     registrations: 'users/registrations',
                                     confirmations: 'users/confirmations' }
 
+  namespace :admin do
+    get '/', to: redirect('admin/phone')
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

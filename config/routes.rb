@@ -10,7 +10,9 @@ Rails.application.routes.draw do
                                     confirmations: 'users/confirmations' }
 
   namespace :admin do
-    get '/', to: redirect('admin/phone')
+    get '/', to: redirect('admin/phones')
+
+    resources :phones
   end
 
   # Example of regular route:

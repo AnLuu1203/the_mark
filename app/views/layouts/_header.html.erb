@@ -81,6 +81,10 @@
           </li>
         </ul>
 
+        <% if current_user %>
+          <%= link_to 'sign out', destroy_user_session_path, method: :delete %>
+        <% end %>
+
       </div>
 
     </div>

@@ -1,0 +1,9 @@
+<%= link_to 'new phone', new_admin_phone_path %>
+
+<ul>
+  <% @phones.each do |phone| %>
+    <li>
+      <%= link_to phone.name, edit_admin_phone_path(phone.id) %>
+    </li>
+  <% end %>
+</ul>

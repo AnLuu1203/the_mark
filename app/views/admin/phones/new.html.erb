@@ -1,0 +1,5 @@
+<div class="container">
+  <%= form_for @phone, url: admin_phones_path, method: :post, as: :phone do |f| %>
+    <%= render 'form', f: f %>
+  <% end %>
+</div>
